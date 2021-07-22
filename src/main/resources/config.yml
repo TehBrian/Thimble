@@ -1,0 +1,12 @@
+messages:
+  game:
+
+  arena:
+    create: "<blue>Created arena <aqua>%s<blue>."
+    remove: "<blue>Removed arena <aqua>%s<blue>."
+
+  join: "You've joined %s."
+  leave: "You've left %s."
+  create: "You've created %s."
+  score: "You scored %s!"
+

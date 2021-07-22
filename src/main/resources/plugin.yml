@@ -1,0 +1,18 @@
+name: Thimble
+description: A recreation of the now-removed Thimble game from thechunk.net.
+author: TehBrian
+website: https://github.com/TehBrian/Thimble
+
+version: ${version}
+main: dev.tehbrian.thimble.Thimble
+api-version: 1.16
+
+commands:
+  thimble:
+    description: The main command for Thimble.
+    permission: thimble.thimble
+    usage: /<command>
+permissions:
+  thimble.thimble:
+    description: Permission to use /thimble.
+    default: op
