@@ -5,7 +5,7 @@ website: https://github.com/TehBrian/Thimble
 
 version: ${version}
 main: dev.tehbrian.thimble.Thimble
-api-version: 1.16
+api-version: 1.17
 
 commands:
   thimble:

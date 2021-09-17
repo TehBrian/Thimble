@@ -80,7 +80,9 @@ public class ThimbleCommand extends BaseCommand {
         @CommandPermission("thimble.arena.create")
         @Description("Create an arena.")
         public void onArenaCreate(Player player, @Single String name, @Optional Location location) {
-            if (location == null) location = player.getLocation();
+            if (location == null) {
+                location = player.getLocation();
+            }
 
             dev.tehbrian.thimble.arena.Arena arena = main.getArenaManager().createArena(name, location);
 
@@ -119,7 +121,9 @@ public class ThimbleCommand extends BaseCommand {
         @CommandPermission("thimble.arena.setspawn")
         @Description("Set arena spawn.")
         public void onArenaSetSpawn(Player player, String arenaName, @Optional Location location) {
-            if (location == null) location = player.getLocation();
+            if (location == null) {
+                location = player.getLocation();
+            }
 
             dev.tehbrian.thimble.arena.Arena arena = main.getArenaManager().getArena(arenaName);
             if (arena == null) {
@@ -131,6 +135,7 @@ public class ThimbleCommand extends BaseCommand {
 
             player.sendMessage(String.format("Set spawn in arena %s to %s", arena.getName(), location.toString()));
         }
+
     }
 
     @Subcommand("game")
@@ -165,5 +170,7 @@ public class ThimbleCommand extends BaseCommand {
 
             player.sendMessage(String.format("Ended game in arena %s", arena.getName()));
         }
+
     }
+
 }

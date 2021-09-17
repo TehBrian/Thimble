@@ -14,7 +14,7 @@ java {
 repositories {
     mavenCentral()
     maven {
-        name = "papermc-repo"
+        name = "papermc"
         url = uri("https://papermc.io/repo/repository/maven-public/")
     }
     maven {
@@ -26,7 +26,7 @@ repositories {
         url = uri("https://s01.oss.sonatype.org/content/groups/public/")
     }
     maven {
-        name = "sonatype-oss-snapshots"
+        name = "sonatype-snapshots"
         url = uri("https://oss.sonatype.org/content/repositories/snapshots/")
     }
 }
